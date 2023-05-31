@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from '@chakra-ui/react'
-import { Header } from './components'
+import { Header, Footer } from './components'
 import { HomePage, PortfolioPage, ContactPage } from './pages'
 ;('#1c98c9')
 export const App: React.FC = () => {
@@ -14,6 +14,7 @@ export const App: React.FC = () => {
                     <Route path='/portfolio' element={<PortfolioPage />} />
                     <Route path='/contact' element={<ContactPage />} />
                 </Routes>
+                <Footer />
             </Container>
         </BrowserRouter>
     )

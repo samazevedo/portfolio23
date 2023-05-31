@@ -9,12 +9,13 @@ const config = {
 
 const colors = {
     primary: {
-        blue: '#3fbdef',
+        blue: '#767aae',
         blueDarker: '#1c98c9',
         purple: '#BED3FF',
         light: '#EBFFE3',
         gray: '#434242',
         white: '#F7F7F7',
+        link: '#9aef3f',
     },
 }
 

@@ -1,11 +1,14 @@
 import React from 'react'
-import { Box, Text, Button, Link } from '@chakra-ui/react'
-import { Icon } from '@chakra-ui/react'
-import { icon } from '@chakra-ui/icons'
-;('#3fbdef')
+import { Box, Text, Button, Link, Image } from '@chakra-ui/react'
+import { Icon } from '@chakra-ui/icons'
+;('#767aae')
+
+const Social = () => {}
+
 export const HomePage = () => {
     return (
         <Box w='100%' mt={100} p={4}>
+            <Box h='50vh'></Box>
             <Box textAlign='center' bg='primary.blue' p={3} borderRadius='lg'>
                 <Text as='h2'>
                     Hello, I&apos;m a Web Developer based in Sao Paulo, Brazil.
@@ -83,21 +86,75 @@ export const HomePage = () => {
                 <Text as='h3'>Socials</Text>
                 <Text as='p'>
                     <Text as='span' fontWeight='bolder'>
-                        <GithubIcon />
-                    </Text>{' '}
-                    Born in Sao Paulo, Brazil.
-                </Text>
-                <Text as='p'>
-                    <Text as='span' fontWeight='bolder'>
-                        2014 - 2022
-                    </Text>{' '}
-                    Worked in Aviation.
-                </Text>
-                <Text as='p'>
-                    <Text as='span' fontWeight='bolder'>
-                        2023 - present
-                    </Text>{' '}
-                    Started his journey in as Web Developer freelancer.
+                        <Link href='https://github.com/samazevedo'>
+                            <Box
+                                display='grid'
+                                gridTemplateColumns='repeat(2, 1fr)'
+                                justifyItems='start'
+                                maxW='9rem'
+                            >
+                                <Image
+                                    src='/icons/github.svg'
+                                    alt='github'
+                                    borderRadius='full'
+                                    boxSize='1.5rem'
+                                    mb={5}
+                                />
+                                <Text as='p'>@samazevedo</Text>
+                            </Box>
+                        </Link>
+                        <Link href='https://'>
+                            <Box
+                                display='grid'
+                                gridTemplateColumns='repeat(2, 1fr)'
+                                justifyItems='start'
+                                maxW='9rem'
+                            >
+                                <Image
+                                    src='/icons/twitter.svg'
+                                    alt='twitter'
+                                    borderRadius='full'
+                                    boxSize='1.5rem'
+                                    mb={5}
+                                />
+                                <Text as='p'>@samazevedo</Text>
+                            </Box>
+                        </Link>
+                        <Link href='https://'>
+                            <Box
+                                display='grid'
+                                gridTemplateColumns='repeat(2, 1fr)'
+                                justifyItems='start'
+                                maxW='9rem'
+                            >
+                                <Image
+                                    src='/icons/linkedin.svg'
+                                    alt='linkedin'
+                                    borderRadius='full'
+                                    boxSize='1.5rem'
+                                    mb={5}
+                                />
+                                <Text as='p'>@samazevedo</Text>
+                            </Box>
+                        </Link>
+                        <Link href=''>
+                            <Box
+                                display='grid'
+                                gridTemplateColumns='repeat(2, 1fr)'
+                                justifyItems='start'
+                                maxW='9rem'
+                            >
+                                <Image
+                                    src='/icons/instagram.svg'
+                                    alt='instagram'
+                                    borderRadius='full'
+                                    boxSize='1.5rem'
+                                    mb={5}
+                                />
+                                <Text as='p'>@samazevedo</Text>
+                            </Box>
+                        </Link>
+                    </Text>
                 </Text>
             </Box>
         </Box>
