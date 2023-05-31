@@ -9,10 +9,10 @@ const config = {
 
 const colors = {
     primary: {
-        green: '#BED3FF',
-        black: '##7BA5FF',
+        blue: '#3fbdef',
+        blueDarker: '#1c98c9',
+        purple: '#BED3FF',
         light: '#EBFFE3',
-        blue: '#156afc',
         gray: '#434242',
         white: '#F7F7F7',
     },
@@ -36,15 +36,20 @@ const styles = {
                 textDecoration: 'underline',
             },
         },
+        h1: {
+            fontFamily: `'Buda', sans-seric`,
+            fontSize: '1.5rem',
+        },
         h3: {
-            fontSize: '1.3rem',
+            fontSize: '1.2rem',
             textDecoration: 'underline',
-            letterSpacing: '0.2rem',
+            letterSpacing: '0.1rem',
             marginBottom: '0.7rem',
         },
         p: {
             fontSize: '1rem',
         },
+        button: {},
     }),
 }
 

@@ -17,7 +17,7 @@ export const Header = () => {
             as='header'
             position='fixed'
             w='100%'
-            bg={useColorModeValue('#ffffff40', '#77777780')}
+            bg={useColorModeValue('#EBFFE340', '#42424240')}
             style={{ backdropFilter: 'blur(1rem)' }}
             zIndex={1}
         >

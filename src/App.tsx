@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from '@chakra-ui/react'
 import { Header } from './components'
 import { HomePage, PortfolioPage, ContactPage } from './pages'
-
+;('#1c98c9')
 export const App: React.FC = () => {
     return (
         <BrowserRouter>
