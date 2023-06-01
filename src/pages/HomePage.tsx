@@ -1,25 +1,76 @@
 import React from 'react'
-import { Box, Text, Button, Link, Image } from '@chakra-ui/react'
+import { Container, Box, Text, Button, Link, Image } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/icons'
-;('#767aae')
 
-const Social = () => {}
+const SocialItem = () => {
+    {
+        item: 'Github'
+        img: '/svg/github.svg'
+        url: 'https://github.com/samazevedo'
+        at: '@samazevedo'
+    }
+    {
+        item: 'Twitter'
+        img: '/svg/twitter.svg'
+        url: 'https://twitter.com/SamAzevedo4'
+        at: '@SamAzevedo4'
+    }
+    {
+        item: 'LinkedIn'
+        img: '/svg/github.svg'
+        url: 'https://www.linkedin.com/in/samuel-azevedo-santos-908a5b53/'
+        at: '@samazevedo'
+    }
+    {
+        item: 'Instagram'
+        img: '/svg/github.svg'
+        url: 'https://instagram.com/'
+        at: '@samazevedo'
+    }
+}
 
 export const HomePage = () => {
     return (
-        <Box w='100%' mt={100} p={4}>
-            <Box h='50vh'></Box>
-            <Box textAlign='center' bg='primary.blue' p={3} borderRadius='lg'>
-                <Text as='h2'>
-                    Hello, I&apos;m a Web Developer based in Sao Paulo, Brazil.
-                </Text>
-            </Box>
-            <Box mt={3}>
-                <Text as='h1' fontSize='2rem'>
-                    Sam Azevedo
-                </Text>
-                <p>Web Developer | Designer</p>
-            </Box>
+        <>
+            <Container>
+                <Box w='100%' mt={100} p={4}>
+                    <Box h='50vh'></Box>
+                    <Box
+                        textAlign='center'
+                        bg='primary.blue'
+                        p={3}
+                        borderRadius='lg'
+                    >
+                        <Text as='h2'>
+                            Hello, I&apos;m a Web Developer based in Sao Paulo,
+                            Brazil.
+                        </Text>
+                    </Box>
+                    <Box mt={3}>
+                        <Text as='h1' fontSize='2rem'>
+                            Sam Azevedo
+                        </Text>
+                        <p>Web Developer | Designer</p>
+                    </Box>
+                    <Box
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        alignItems='center'
+                    >
+                        <Image
+                            borderColor='primary.blue'
+                            borderWidth={3}
+                            borderStyle='solid'
+                            maxW='100px'
+                            display='inline-block'
+                            borderRadius='6rem'
+                            src='images/profile.jpg'
+                            alt='profile image'
+                        />
+                    </Box>
+                </Box>
+            </Container>
             <Box mt={5}>
                 <Text as='h3'>Work</Text>
                 <Text as='p'>
@@ -154,9 +205,10 @@ export const HomePage = () => {
                                 <Text as='p'>@samazevedo</Text>
                             </Box>
                         </Link>
+                        <ul></ul>
                     </Text>
                 </Text>
             </Box>
-        </Box>
+        </>
     )
 }
