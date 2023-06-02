@@ -62,9 +62,9 @@ export const HomePage = () => {
                             borderColor='primary.blue'
                             borderWidth={3}
                             borderStyle='solid'
-                            maxW='100px'
+                            boxSize='6rem'
                             display='inline-block'
-                            borderRadius='6rem'
+                            borderRadius='4rem'
                             src='images/profile.jpg'
                             alt='profile image'
                         />
