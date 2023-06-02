@@ -34,7 +34,7 @@ export const HomePage = () => {
         <>
             <Container>
                 <Box w='100%' mt={100} p={4}>
-                    <Box h='50vh'></Box>
+                    <Box h='50vh'> there is nothing here</Box>
                     <Box
                         textAlign='center'
                         bg='primary.blue'
@@ -46,28 +46,39 @@ export const HomePage = () => {
                             Brazil.
                         </Text>
                     </Box>
-                    <Box mt={3}>
-                        <Text as='h1' fontSize='2rem'>
-                            Sam Azevedo
-                        </Text>
-                        <p>Web Developer | Designer</p>
-                    </Box>
+
                     <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6 }}
+                        display='grid'
+                        gridTemplateColumns={{ base: '1', md: 'repeat(2,1fr)' }}
                         alignItems='center'
+                        p={3}
                     >
-                        <Image
-                            borderColor='primary.blue'
-                            borderWidth={3}
-                            borderStyle='solid'
-                            boxSize='6rem'
-                            display='inline-block'
-                            borderRadius='4rem'
-                            src='images/profile.jpg'
-                            alt='profile image'
-                        />
+                        <Box
+                            mt={5}
+                            as='div'
+                            justifySelf={{ base: 'center', md: 'start' }}
+                        >
+                            <Text as='h1' fontSize='2rem'>
+                                Sam Azevedo
+                            </Text>
+                            <p>Web Developer | Designer</p>
+                        </Box>
+                        <Box
+                            mt={5}
+                            as='div'
+                            justifySelf={{ base: 'center', md: 'end' }}
+                        >
+                            <Image
+                                borderColor='primary.blue'
+                                borderWidth={3}
+                                borderStyle='solid'
+                                boxSize='6rem'
+                                display='inline-block'
+                                borderRadius='4rem'
+                                src='images/profile.jpg'
+                                alt='profile image'
+                            />
+                        </Box>
                     </Box>
                 </Box>
             </Container>
