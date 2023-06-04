@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Box, Text, Button, Link, Image } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/icons'
+import { Paragraph, Section } from '../components'
 
 const SocialItem = () => {
     {
@@ -81,51 +82,52 @@ export const HomePage = () => {
                         </Box>
                     </Box>
                 </Box>
+                <Section delay='0.1'>
+                    <Text as='h3'>Work</Text>
+                    <Paragraph>
+                        Samuel Azevedo is a freelancer Web Developer based in
+                        Sao Paulo, Brazil, has a passion for building web
+                        applications. Self taught he is always looking forward
+                        to learn new tools and technologies for the Web. When
+                        not online, he loves to travel, explore new places and
+                        food.
+                    </Paragraph>
+                    <Box
+                        display='grid'
+                        alignItems='center'
+                        justifyItems='center'
+                        mt={5}
+                    >
+                        <Link href='/portfolio'>
+                            <Button size='md' bg='primary.blue'>
+                                Portfolio
+                            </Button>
+                        </Link>
+                    </Box>
+                </Section>
+                <Section delay='0.1'>
+                    <Text as='h3'>Bio</Text>
+                    <Paragraph>
+                        <Text as='span' fontWeight='bolder'>
+                            1990
+                        </Text>{' '}
+                        Born in Sao Paulo, Brazil.
+                    </Paragraph>
+                    <Paragraph>
+                        <Text as='span' fontWeight='bolder'>
+                            2014 - 2022
+                        </Text>{' '}
+                        Worked in Aviation.
+                    </Paragraph>
+                    <Paragraph>
+                        <Text as='span' fontWeight='bolder'>
+                            2023 - present
+                        </Text>{' '}
+                        Started his journey in as Web Developer freelancer.
+                    </Paragraph>
+                </Section>
             </Container>
-            <Box mt={5}>
-                <Text as='h3'>Work</Text>
-                <Text as='p'>
-                    Samuel Azevedo is a freelancer Web Developer based in Sao
-                    Paulo, Brazil, has a passion for building web applications.
-                    Self taught he is always looking forward to learn new tools
-                    and technologies for the Web. When not online, he loves to
-                    travel, explore new places and food.
-                </Text>
-                <Box
-                    display='grid'
-                    alignItems='center'
-                    justifyItems='center'
-                    mt={5}
-                >
-                    <Link href='/portfolio'>
-                        <Button size='md' bg='primary.blue'>
-                            Portfolio
-                        </Button>
-                    </Link>
-                </Box>
-            </Box>
-            <Box mt={5}>
-                <Text as='h3'>Bio</Text>
-                <Text as='p'>
-                    <Text as='span' fontWeight='bolder'>
-                        1990
-                    </Text>{' '}
-                    Born in Sao Paulo, Brazil.
-                </Text>
-                <Text as='p'>
-                    <Text as='span' fontWeight='bolder'>
-                        2014 - 2022
-                    </Text>{' '}
-                    Worked in Aviation.
-                </Text>
-                <Text as='p'>
-                    <Text as='span' fontWeight='bolder'>
-                        2023 - present
-                    </Text>{' '}
-                    Started his journey in as Web Developer freelancer.
-                </Text>
-            </Box>
-            <Box mt={5}>
+            <Section delay='0.1'>
                 <Text as='h3'>
                     <Icon
                         viewBox='0 0 24 24'
@@ -139,12 +141,12 @@ export const HomePage = () => {
                         />
                     </Icon>
                 </Text>
-                <Text as='p'>
+                <Paragraph>
                     Technology, Art, Music, Photography, Soccer, Languages,
                     Travel, Food{' '}
-                </Text>
-            </Box>
-            <Box mt={5}>
+                </Paragraph>
+            </Section>
+            <Section delay='0.1'>
                 <Text as='h3'>Socials</Text>
                 <Text as='p'>
                     <Text as='span' fontWeight='bolder'>
@@ -162,7 +164,7 @@ export const HomePage = () => {
                                     boxSize='1.5rem'
                                     mb={5}
                                 />
-                                <Text as='p'>@samazevedo</Text>
+                                <Paragraph>@samazevedo</Paragraph>
                             </Box>
                         </Link>
                         <Link href='https://'>
@@ -179,7 +181,7 @@ export const HomePage = () => {
                                     boxSize='1.5rem'
                                     mb={5}
                                 />
-                                <Text as='p'>@samazevedo</Text>
+                                <Paragraph>@samazevedo</Paragraph>
                             </Box>
                         </Link>
                         <Link href='https://'>
@@ -196,7 +198,7 @@ export const HomePage = () => {
                                     boxSize='1.5rem'
                                     mb={5}
                                 />
-                                <Text as='p'>@samazevedo</Text>
+                                <Paragraph>@samazevedo</Paragraph>
                             </Box>
                         </Link>
                         <Link href=''>
@@ -213,13 +215,14 @@ export const HomePage = () => {
                                     boxSize='1.5rem'
                                     mb={5}
                                 />
-                                <Text as='p'>@samazevedo</Text>
+                                <Paragraph>@samazevedo</Paragraph>
                             </Box>
                         </Link>
                         <ul></ul>
                     </Text>
                 </Text>
-            </Box>
+            </Section>
+            <Box mt={5}></Box>
         </>
     )
 }

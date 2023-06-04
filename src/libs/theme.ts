@@ -41,6 +41,10 @@ const styles = {
             fontFamily: `'Buda', sans-seric`,
             fontSize: '1.5rem',
         },
+        h2: {
+            fontFamily: `'Buda', sans-seric`,
+            fontSize: '1.3rem',
+        },
         h3: {
             fontSize: '1.2rem',
             textDecoration: 'underline',
