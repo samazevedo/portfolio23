@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Box, Text, Button, Link, Image } from '@chakra-ui/react'
 import { Icon } from '@chakra-ui/icons'
-import { Paragraph, Section } from '../components'
+import { BioSection, BioYear, Paragraph, Section } from '../components'
 
 const SocialItem = () => {
     {
@@ -107,45 +107,40 @@ export const HomePage = () => {
                 </Section>
                 <Section delay='0.1'>
                     <Text as='h3'>Bio</Text>
-                    <Paragraph>
-                        <Text as='span' fontWeight='bolder'>
-                            1990
-                        </Text>{' '}
-                        Born in Sao Paulo, Brazil.
-                    </Paragraph>
-                    <Paragraph>
-                        <Text as='span' fontWeight='bolder'>
-                            2014 - 2022
-                        </Text>{' '}
+                    <BioSection>
+                        <BioYear>1990</BioYear> Born in Sao Paulo, Brazil.
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>2014 - 2022</BioYear>
                         Worked in Aviation.
-                    </Paragraph>
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>2023 - present</BioYear> Started his journey in
+                        as Web Developer freelancer.
+                    </BioSection>
+                </Section>
+                <Section delay='0.1'>
+                    <Text as='h3' letterSpacing={2}>
+                        I
+                        <Icon
+                            viewBox='0 0 24 24'
+                            color='red.500'
+                            strokeMiterlimit='2'
+                            strokeLinejoin='round'
+                        >
+                            <path
+                                fill='currentColor'
+                                d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z'
+                            />
+                        </Icon>
+                    </Text>
                     <Paragraph>
-                        <Text as='span' fontWeight='bolder'>
-                            2023 - present
-                        </Text>{' '}
-                        Started his journey in as Web Developer freelancer.
+                        Technology, Art, Music, Photography, Soccer, Languages,
+                        Travel, Food{' '}
                     </Paragraph>
                 </Section>
             </Container>
-            <Section delay='0.1'>
-                <Text as='h3'>
-                    <Icon
-                        viewBox='0 0 24 24'
-                        color='red.500'
-                        strokeMiterlimit='2'
-                        strokeLinejoin='round'
-                    >
-                        <path
-                            fill='currentColor'
-                            d='m12 5.72c-2.624-4.517-10-3.198-10 2.461 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-5.678-7.396-6.944-10-2.461z'
-                        />
-                    </Icon>
-                </Text>
-                <Paragraph>
-                    Technology, Art, Music, Photography, Soccer, Languages,
-                    Travel, Food{' '}
-                </Paragraph>
-            </Section>
+
             <Section delay='0.1'>
                 <Text as='h3'>Socials</Text>
                 <Text as='p'>

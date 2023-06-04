@@ -6,7 +6,7 @@ import HamburgerMenu from './HamburgerMenu'
 import { Footer } from './Footer'
 import { Section } from './Section'
 import { Paragraph } from './Paragraph'
-
+import { BioSection, BioYear } from './Bio'
 export {
     ColorModeSwitcher,
     Header,
@@ -16,4 +16,6 @@ export {
     Footer,
     Section,
     Paragraph,
+    BioSection,
+    BioYear,
 }

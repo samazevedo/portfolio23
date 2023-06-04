@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import {
     useColorMode,
     useColorModeValue,
@@ -15,16 +16,27 @@ export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = (props) => {
     const SwitchIcon = useColorModeValue(MoonIcon, SunIcon)
 
     return (
-        <IconButton
-            size='md'
-            fontSize='lg'
-            variant='ghost'
-            color='current'
-            marginLeft='2'
-            onClick={toggleColorMode}
-            icon={<SwitchIcon />}
-            aria-label={`Switch to ${text} mode`}
-            {...props}
-        />
+        <AnimatePresence initial={true}>
+            <motion.div
+                style={{ display: 'inline-block' }}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 20, opacity: 0.2 }}
+                transition={{ duration: 0.7 }}
+                key='theme-btn-toggle'
+            >
+                <IconButton
+                    size='md'
+                    fontSize='lg'
+                    variant='ghost'
+                    color='current'
+                    marginLeft='2'
+                    onClick={toggleColorMode}
+                    icon={<SwitchIcon />}
+                    aria-label={`Switch to ${text} mode`}
+                    {...props}
+                />
+            </motion.div>
+        </AnimatePresence>
     )
 }
