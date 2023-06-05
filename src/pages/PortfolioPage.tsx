@@ -1,10 +1,12 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Container, Box, Text } from '@chakra-ui/react'
 
 export const PortfolioPage = () => {
     return (
-        <Box>
-            <Text>This is my Portfolio Page</Text>
-        </Box>
+        <Container mt={70}>
+            <Text as='h2' fontSize={30} mb={4}>
+                Portfolio
+            </Text>
+        </Container>
     )
 }
