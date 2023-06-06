@@ -31,25 +31,43 @@ export const GridItem = ({
     </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-    <Box w='100%' alignContent='center'>
-        <Link href={`/works/${id}`}>
-            <Image
-                src={thumbnail}
-                alt={title}
-                className='grid-thumbnail-item'
-                placeholder='blur'
-            />
-            <LinkOverlay href={`/works/${id}`}>
-                <Text mt={2} fontSize={20}>
-                    {title}
-                </Text>
-            </LinkOverlay>
-            <Text fontSize={14}>{children}</Text>
-        </Link>
-    </Box>
-)
+export const WorkGridItem = ({
+    children,
+    id,
+    title,
+    thumbnail,
+}: {
+    children: React.ReactNode
+    id: string
+    title: string
+    thumbnail: string | any
+}) => {
+    return (
+        <Box w='100%' alignContent='center'>
+            <Link href={`/portfolio/${id}`}>
+                <Image
+                    src={thumbnail}
+                    alt={title}
+                    className='grid-thumbnail-item'
+                    placeholder='blur'
+                />
+                <LinkOverlay href={`/portfolio/${id}`}>
+                    <Text mt={2} fontSize={20}>
+                        {title}
+                    </Text>
+                </LinkOverlay>
+                <Text fontSize={14}>{children}</Text>
+            </Link>
+        </Box>
+    )
+}
 
 export const GridItemStyle = () => (
-    
+    <Global
+        styles={`
+        .grid-item-thumbnail {
+            border-radius:1.2rem;
+        }
+    `}
+    />
 )

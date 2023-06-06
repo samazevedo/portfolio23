@@ -7,6 +7,7 @@ import { Footer } from './Footer'
 import { Section } from './Section'
 import { Paragraph } from './Paragraph'
 import { BioSection, BioYear } from './Bio'
+import { WorkGridItem } from './grid-item'
 export {
     ColorModeSwitcher,
     Header,
@@ -18,4 +19,5 @@ export {
     Paragraph,
     BioSection,
     BioYear,
+    WorkGridItem,
 }
